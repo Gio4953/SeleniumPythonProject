@@ -1,5 +1,0 @@
-Private = "//*[@id='modals']/div[2]/div/div/form/div[1]/div[4]/div[1]/label[1]/span[1]/input"
-Public = "//*[@id='modals']/div[2]/div/div/form/div[1]/div[4]/div[1]/label[2]/span[1]/input"
-Option1 = "//*[@id='modals']/div[2]/div/div/form/div[1]/div[4]/div[2]/label[1]/span[1]"
-Option2 = "//*[@id='modals']/div[2]/div/div/form/div[1]/div[4]/div[2]/label[2]/span[1]/input"
-Option3 = "//*[@id='modals']/div[2]/div/div/form/div[1]/div[4]/div[2]/label[3]/span[1]"
