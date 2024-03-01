@@ -24,6 +24,9 @@ def driver(request):
     return driver
 
 
+login_url = "https://app.qase.io/login"
+projects_url = "https://app.qase.io/projects"
+
 email = "giorgikvernadze31@gmail.com"
 pwd = "P2ssw)rd#132"
 

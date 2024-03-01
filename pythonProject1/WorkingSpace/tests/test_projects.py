@@ -8,7 +8,7 @@ from WorkingSpace.tests.values import driver
 def test_new_project(driver):
     login_page = LoginPage(driver)
     project_page = NewProject(driver)
-    project_page.open_page("https://app.qase.io/projects?status=%5B%22active%22%5D")
+    project_page.open_page(values.projects_url)
     login_page.login_to_account(values.email, values.pwd)
     project_page.create_project("Description")
     project_page.click_project_access_type()

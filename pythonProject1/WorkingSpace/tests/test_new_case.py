@@ -7,7 +7,7 @@ from WorkingSpace.pages.new_case_page import NewCasePage
 def test_new_case(driver):
     login_page = LoginPage(driver)
     new_case_page = NewCasePage(driver)
-    new_case_page.open_page(f"https://app.qase.io/projects/")
+    new_case_page.open_page(values.projects_url)
     login_page.login_to_account(values.email, values.pwd)
     new_case_page.creat_case(values.title_name, values.description, values.status_option, values.severity_option,
                              values.priority_option, values.type_option, values.layer_option, values.flasky_option,

@@ -8,13 +8,13 @@ login_page = LoginPage(driver)
 
 
 def test_login(driver):
-    login_page.open_page("https://app.qase.io/login")
+    login_page.open_page(values.login_url)
     login_page.login_to_account(values.email, values.pwd)
 
 
 def test_new_project(driver):
     project_page = NewProject(driver)
-    project_page.open_page("https://app.qase.io/projects?status=%5B%22active%22%5D")
+    project_page.open_page(values.projects_url)
     login_page.login_to_account(values.email, values.pwd)
     project_page.create_project("Description")
     project_page.click_project_access_type()
@@ -28,7 +28,7 @@ def test_new_project(driver):
 
 def test_new_case(driver):
     new_case_page = NewCasePage(driver)
-    new_case_page.open_page("https://app.qase.io/projects/")
+    new_case_page.open_page(values.projects_url)
     login_page.login_to_account(values.email, values.pwd)
     new_case_page.creat_case(values.title_name, values.description, values.status_option, values.severity_option,
                              values.priority_option, values.type_option, values.layer_option, values.flasky_option,

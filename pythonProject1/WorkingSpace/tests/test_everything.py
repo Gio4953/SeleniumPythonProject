@@ -11,7 +11,7 @@ def test_signup(driver):
     login_page = LoginPage(driver)
     project_page = NewProject(driver)
     new_case_page = NewCasePage(driver)
-    login_page.open_page("https://app.qase.io/login")
+    login_page.open_page(values.login_url)
     login_page.login_to_account(values.email, values.pwd)
 
     project_page.create_project("This is my description")
